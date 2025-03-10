@@ -1,12 +1,12 @@
 [project]
-name = "poetry env list"
+name = "poetry_env_list"
 version = "0.1.0"
 description = ""
 authors = [
     {name = "CMAYKL",email = "mbeniukh2021@itcollege.lviv.ua"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
 ]
 
@@ -14,3 +14,8 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.12"
+pytest-cov = "^6.0.0"
+
