@@ -37,3 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Run Python 
+      run: |
+        python ./lab2/3.py 
