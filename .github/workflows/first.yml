@@ -1,0 +1,17 @@
+name: First Workflow  # Назва Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  name_one:  # Перше завдання
+    name: Run first Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: First Step
+        run: echo "This is the first job"
+

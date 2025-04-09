@@ -1,0 +1,16 @@
+name: Second Workflow  
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  name_two:  
+    name: Run Second Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Second Step
+        run: echo "This is the second job"
