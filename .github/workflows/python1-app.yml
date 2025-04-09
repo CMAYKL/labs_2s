@@ -4,6 +4,9 @@
 name: first Python application
 
 on:
+  #schedule:
+    #- cron: '0 10 * * 1'
+  #workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
@@ -40,3 +43,4 @@ jobs:
     - name: Run Python 
       run: |
         python ./lab2/3.py 
+       
